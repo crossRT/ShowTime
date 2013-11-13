@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- THIS is values-v11 above -->
+<resources>
+    <style name="MyTheme" parent="Theme.Sherlock.Light">
+        <item name="actionBarStyle">@style/DefaultActionBar</item>
+   		<item name="android:actionBarStyle">@style/DefaultActionBar</item>
+    </style>
+    <style name="ThemeRed" parent="Theme.Sherlock.Light">
+   		<item name="actionBarStyle">@style/RedActionBar</item>
+   		<item name="android:actionBarStyle">@style/RedActionBar</item>
+   		<item name="android:windowBackground">@color/window_red</item>
+    </style>
+    <style name="ThemeYellow" parent="Theme.Sherlock.Light">
+   		<item name="actionBarStyle">@style/YellowActionBar</item>
+   		<item name="android:actionBarStyle">@style/YellowActionBar</item>
+   		<item name="android:windowBackground">@color/window_yellow</item>
+    </style>
+    <style name="ThemeBlue" parent="Theme.Sherlock.Light">
+   		<item name="actionBarStyle">@style/BlueActionBar</item>
+   		<item name="android:actionBarStyle">@style/BlueActionBar</item>
+   		<item name="android:windowBackground">@color/window_blue</item>
+    </style>
+    <style name="ThemeGreen" parent="Theme.Sherlock.Light">
+   		<item name="actionBarStyle">@style/GreenActionBar</item>
+   		<item name="android:actionBarStyle">@style/GreenActionBar</item>
+   		<item name="android:windowBackground">@color/window_green</item>
+    </style>
+    <style name="ThemeBrown" parent="Theme.Sherlock.Light">
+   		<item name="actionBarStyle">@style/BrownActionBar</item>
+   		<item name="android:actionBarStyle">@style/BrownActionBar</item>
+   		<item name="android:windowBackground">@color/window_brown</item>
+    </style>
+    <style name="HoloRed" parent="MyHolo">
+	    <item name="actionBarStyle">@style/HoloRedActionBar</item>
+	    <item name="android:actionBarStyle">@style/HoloRedActionBar</item>
+	</style>
+	<style name="HoloYellow" parent="MyHolo">
+	    <item name="actionBarStyle">@style/HoloYellowActionBar</item>
+	    <item name="android:actionBarStyle">@style/HoloYellowActionBar</item>
+	</style>
+	<style name="HoloBlue" parent="MyHolo">
+	    <item name="actionBarStyle">@style/HoloBlueActionBar</item>
+	    <item name="android:actionBarStyle">@style/HoloBlueActionBar</item>
+	</style>
+	<style name="HoloGreen" parent="MyHolo">
+	    <item name="actionBarStyle">@style/HoloGreenActionBar</item>
+	    <item name="android:actionBarStyle">@style/HoloGreenActionBar</item>
+	</style>
+    
+    <!-- BEGIN ActionBar Style -->
+    <style name="DefaultActionBar" parent="MyActionBar">
+        <item name="background">@color/theme_default</item>
+    	<item name="android:background">@color/theme_default</item>
+    </style>
+    <style name="RedActionBar" parent="MyActionBar">
+    	<item name="background">@color/theme_red</item>
+    	<item name="android:background">@color/theme_red</item>
+	</style>
+    <style name="YellowActionBar" parent="MyActionBar">
+    	<item name="background">@color/theme_yellow</item>
+    	<item name="android:background">@color/theme_yellow</item>
+	</style>
+    <style name="BlueActionBar" parent="MyActionBar">
+    	<item name="background">@color/theme_blue</item>
+    	<item name="android:background">@color/theme_blue</item>
+	</style>
+    <style name="GreenActionBar" parent="MyActionBar">
+    	<item name="background">@color/theme_green</item>
+    	<item name="android:background">@color/theme_green</item>
+	</style>
+    <style name="BrownActionBar" parent="MyActionBar">
+    	<item name="background">@color/theme_brown</item>
+    	<item name="android:background">@color/theme_brown</item>
+	</style>
+	<style name="HoloRedActionBar" parent="MyHoloActionBar">
+	    <item name="background">@color/holo_red</item>
+	    <item name="android:background">@color/holo_red</item>
+	</style>
+	<style name="HoloYellowActionBar" parent="MyHoloActionBar">
+	    <item name="background">@color/holo_yellow</item>
+	    <item name="android:background">@color/holo_yellow</item>
+	</style>
+	<style name="HoloBlueActionBar" parent="MyHoloActionBar">
+	    <item name="background">@color/holo_blue</item>
+	    <item name="android:background">@color/holo_blue</item>
+	</style>
+	<style name="HoloGreenActionBar" parent="MyHoloActionBar">
+	    <item name="background">@color/holo_green</item>
+	    <item name="android:background">@color/holo_green</item>
+	</style>
+	
+	<!-- END ActionBar Style -->
+	<style name="MyActionBar" parent="Widget.Sherlock.ActionBar">
+	    <item name="titleTextStyle">@style/ActionBarTitle</item>
+	    <item name="android:titleTextStyle">@style/ActionBarTitle</item>
+	</style>
+	<style name="MyHolo" parent="Theme.Sherlock.Light">
+	    <item name="actionOverflowButtonStyle">@style/HoloOverFlow</item>
+		<item name="android:actionOverflowButtonStyle">@style/HoloOverFlow</item>
+	</style>
+	<style name="MyHoloActionBar" parent="Widget.Sherlock.ActionBar">
+	    <item name="titleTextStyle">@style/HoloText</item>
+	    <item name="android:titleTextStyle">@style/HoloText</item>
+	</style>
+	<style name="HoloText" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+		<item name="android:textColor">@color/holo_text</item>
+	</style>
+	<style name="HoloOverFlow" parent="Widget.Sherlock.ActionButton.Overflow">
+	    <item name="android:src">@drawable/holo_overflow</item>
+	</style>
+	<style name="ActionBarTitle" parent="TextAppearance.Sherlock.Widget.ActionBar.Title">
+	    <item name="android:textColor">@color/title_gray</item>
+	</style>
+</resources>

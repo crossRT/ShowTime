@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">ShowTime</string>
+    <string name="version">ShowTime v4</string>
+    <string name="author">by CrossRT\nClick to open menu</string>
+    <string name="no_class_found">No class found</string>
+    <string name="no_class_filter">No class is matched\nPlease check your filter settings. </string>
+    <string name="today_no_class">Hooray~~\nToday have no class!</string>
+    
+    <!-- Initial Page -->
+    <string name="setupText1">Thank you for using ShowTime</string>
+    <string name="setupText2">Follow the step to complete the setup.</string>
+    <string name="step1">Step 1: select your Intake</string>
+    <string name="step1_2_2">Intake not in the list?</string>
+    <string name="step1_2">Enter yourself: </string>
+    <string name="step2">Step 2: set filter</string>
+	<string name="step3">Step 3: select your Tutorial</string>
+	<string name="change">You can change it in Preferences.</string>
+	<string name="case_sensative">Enter here!</string>
+	<string name="first_caution">! wrong filter will cause unexpected error !</string>
+	<string name="first_caution2">left blank if only 1 class</string>
+	<string name="lecture">Lecture</string>
+	<string name="lab">Lab</string>
+	<string name="tutorial">Tutorial</string>
+	
+	<!-- Menu -->
+	<string name="save">save</string>
+	<string name="update">Update</string>
+		
+	<!-- Toast -->
+	<string name="downloading">Downloading timetable</string>
+	<string name="update_success">Timetable downloaded!</string>
+	<string name="connection_error">Connection error</string>
+	<string name="intake_no_class">Your intake timtable is not found</string>
+	<string name="no_connection">Check your connection</string>
+	<string name="set_intake">Set your intake in Preferences!</string>
+	<string name="miss_intakecode">Select your intake code!</string>
+	
+	<!-- Changelog -->
+	<string name="changelog_full_title">Change Log</string>
+    <string name="changelog_title">What\'s New</string>
+    <string name="changelog_ok_button">OK</string>
+    <string name="changelog_show_full">more&#8230;</string>
+    <string name="changelog">Change Log</string>
+    <string name="ACT">All Class(no filter)</string>
+    
+    <!-- All Page Title -->
+    <string name="first_time_setup">Setup</string>
+    <string name="preferences">Preferences</string>
+	<string name="about">About</string>
+	<string name="allclass">All Class</string>
+	<string name="todayclass">Today Class</string>
+	<string name="widget_tittle">Today class:</string>
+    
+	<!-- Settings Page -->
+	<string name="menu">Menu</string>
+	<string name="about_me">About me</string>
+	<string name="about_me_content">I am Ray. A 20 years old student. From APU. I spend time on this app, if it useful for you, donate me!</string>
+	<string name="bug_report">ShowTime bug report</string>
+	<string name="donate_me">Donate me</string>
+	<string name="donate_summary">Feel free to donate me.</string>
+	<string name="donate_me_content">This app is totally free, but if you are pleased with my work, feel free to donate me.\nYour donation will help on my next project.\nI will be grateful if you decide to donated for me.\n\nDo you sure?</string>
+	<string name="rate_title">Rate ShowTime</string>
+	<string name="rate_content">Comment on Google Play.</string>
+    <string name="preference_new_features">New features</string>
+    <string name="preference_intake">Intake setting</string>
+    <string name="preference_filter">Filter setting</string>
+    <string name="select_intake">Select your intake</string>
+    <string name="enter_intake">Enter your intake</string>
+    <string name="current_intake">Current intake:</string>
+    <string name="select_lecture">Select your lecture</string>
+    <string name="select_lab">Select your lab</string>
+    <string name="select_tutorial">Select your tutorial</string>
+    <string name="choose_theme">Theme setting</string>
+    <string name="auto_update">Auto update</string>
+    <string name="auto_update_on">Update on every Saturday</string>
+    <string name="auto_update_off">Enable to auto update timetable</string>
+    <string name="dash_clock">DashClock widget</string>
+    <string name="dash_clock_summary">For Android 4.2 above. Awesome feature!</string>
+    
+    <!-- DC Setting Page -->
+    <string name="display_before">Display class before (minutes)</string>
+</resources>

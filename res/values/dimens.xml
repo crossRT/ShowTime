@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="HeaderSize">20sp</dimen>
+    <dimen name="Header2Size">16sp</dimen>
+    <dimen name="LLT">18sp</dimen>
+    <dimen name="perclass_table_height">70dp</dimen>
+    <dimen name="table_day_size">25sp</dimen>
+    <dimen name="table_subject_size">18sp</dimen>
+    <dimen name="table_font_size">12sp</dimen>
+    <dimen name="first_caution">13sp</dimen>
+    <dimen name="widget_timeclass">10sp</dimen>
+    <dimen name="widget_subject">12sp</dimen>
+    <dimen name="widget_tittle">14sp</dimen>
+</resources>

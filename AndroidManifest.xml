@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.crossrt.showtime"
+    android:versionCode="14"
+    android:versionName="v3.4">
+
+    <uses-sdk
+        android:minSdkVersion="8" android:targetSdkVersion="18"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/MyTheme" >
+        <activity
+            android:name=".Main"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".InitialPage"
+            android:exported="false"
+            android:label="@string/first_time_setup" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuPreferences"
+            android:label="@string/preferences" >
+        </activity>
+        <activity
+            android:name=".MenuAbout"
+            android:label="@string/about" >
+        </activity>
+		<activity
+            android:name=".ClassToday"
+            android:label="@string/todayclass" >
+            <intent-filter>
+                <action android:name="com.crossrt.showtime.TodayClass.action" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ClassAll"
+            android:label="@string/ACT" >
+        </activity>
+        <activity
+	        android:name=".Preferences"
+	        android:label="Preferences">
+		</activity>
+		<activity 
+		    android:name=".DCwidgetSettings"
+		    android:label="DCwidgetSettings"
+		    android:exported="true">		    
+		</activity>
+        <receiver android:name=".Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="com.crossrt.showtime.DATABASE_UPDATED"/>
+                <action android:name="com.crossrt.showtime.FILTER_UPDATED"/>
+                <action android:name="android.intent.action.DATE_CHANGED"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+        <receiver android:name=".CallAutoUpdate" android:exported="true" android:enabled="true" android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+            	<action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".AlarmReceiver" android:exported="false">
+        	<intent-filter>
+        	    <action android:name="com.crossrt.showtime.DATABASE_UPDATED"/>
+        	</intent-filter>
+        </receiver>
+        <service android:name=".AutoUpdater"></service>
+		<service android:name=".DCwidget"
+            android:icon="@drawable/dashclock"
+            android:label="@string/app_name"
+            android:permission="com.google.android.apps.dashclock.permission.READ_EXTENSION_DATA">
+            <intent-filter>
+                <action android:name="com.google.android.apps.dashclock.Extension" />
+            </intent-filter>
+            <meta-data android:name="protocolVersion" android:value="1" />
+            <meta-data android:name="description"
+                android:value="Display the coming class" />
+            <meta-data android:name="settingsActivity"
+                android:value=".DCwidgetSettings" />
+        </service>
+    </application>
+
+</manifest>

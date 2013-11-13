@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="3pt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/setupView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/setupText1"
+        android:textSize="@dimen/HeaderSize" />
+    
+    <TextView
+        android:id="@+id/setupView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setupView1"
+        android:layout_below="@+id/setupView1"
+        android:layout_marginTop="0dp"
+        android:text="@string/setupText2"
+        android:textSize="@dimen/Header2Size" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setupView2"
+        android:layout_below="@+id/setupView2" >
+
+        <TextView
+            android:id="@+id/step1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setupView2"
+            android:layout_below="@+id/setupView2"
+            android:layout_marginTop="10dp"
+            android:text="@string/step1"
+            android:textSize="@dimen/Header2Size"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <Spinner
+            android:id="@+id/intake_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/step1"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/step1" />
+        
+        <TextView
+            android:id="@+id/step1_2_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setupView2"
+            android:layout_below="@+id/intake_spinner"
+            android:layout_marginTop="10dp"
+            android:text="@string/step1_2_2"
+            android:textSize="@dimen/Header2Size"
+            android:textStyle="bold"
+            android:typeface="normal" />
+        <TextView
+            android:id="@+id/step1_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/setupView2"
+            android:layout_below="@+id/step1_2_2"
+            android:layout_marginTop="2dp"
+            android:text="@string/step1_2"
+            android:textSize="@dimen/Header2Size"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/step2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/intake_spinner"
+            android:layout_below="@+id/step1_2"
+            android:layout_marginTop="15dp"
+            android:text="@string/step2"
+            android:textSize="@dimen/Header2Size"
+            android:textStyle="bold"
+            android:typeface="normal" />
+
+        <TextView
+            android:id="@+id/lecture_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/step2"
+            android:layout_alignRight="@+id/step2"
+            android:layout_below="@+id/step2"
+            android:gravity="right"
+            android:padding="9dip"
+            android:text="@string/lecture"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/LLT" />
+
+        <Spinner
+            android:id="@+id/lecture_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/lecture_text"
+            android:layout_alignRight="@+id/intake_spinner"
+            android:layout_alignTop="@+id/lecture_text"
+            android:layout_toRightOf="@+id/lab_text" />
+
+        <TextView
+            android:id="@+id/lab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/lecture_text"
+            android:layout_alignRight="@+id/lecture_text"
+            android:layout_below="@+id/lecture_text"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:padding="9dip"
+            android:text="@string/lab"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/LLT" />
+
+        <Spinner
+            android:id="@+id/lab_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_above="@+id/tutorial_text"
+            android:layout_alignRight="@+id/lecture_spinner"
+            android:layout_alignTop="@+id/lab_text"
+            android:layout_toRightOf="@+id/lab_text" />
+
+        <TextView
+            android:id="@+id/tutorial_text"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/lecture_text"
+            android:layout_alignRight="@+id/lecture_text"
+            android:layout_below="@+id/lab_text"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:padding="9dip"
+            android:text="@string/tutorial"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="@dimen/LLT" />
+
+        <Spinner
+            android:id="@+id/tutorial_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/tutorial_text"
+            android:layout_alignRight="@+id/lab_spinner"
+            android:layout_alignTop="@+id/tutorial_text"
+            android:layout_toRightOf="@+id/tutorial_text" />
+
+        <TextView
+            android:id="@+id/first_caution"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tutorial_text"
+            android:layout_alignRight="@+id/tutorial_spinner"
+            android:layout_below="@+id/tutorial_text"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="@string/first_caution"
+            android:textColor="@color/caution_red"
+            android:textSize="@dimen/first_caution" />
+
+        <TextView
+            android:id="@+id/first_caution2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/step2"
+            android:layout_alignRight="@+id/lecture_spinner"
+            android:layout_alignTop="@+id/step2"
+            android:gravity="center"
+            android:text="@string/first_caution2"
+            android:textColor="@color/caution_red"
+            android:textSize="@dimen/first_caution" />
+
+        <EditText
+            android:id="@+id/intake_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/step1_2"
+            android:layout_alignBottom="@+id/step1_2"
+            android:layout_toRightOf="@+id/step1_2"
+            android:hint="@string/case_sensative" >
+
+            <requestFocus />
+        </EditText>
+
+    </RelativeLayout>
+</RelativeLayout>

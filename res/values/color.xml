@@ -1,0 +1,25 @@
+<resources>
+    <color name="title_gray">#4A4A4A</color>
+    <color name="text_gray">#474747</color>
+    <color name="holo_text">#F0F0F0</color>
+    <color name="empty_message">#8B8B8B</color>
+    <color name="caution_red">#FF2E2E</color>
+    
+    <!-- Theme color -->
+    <color name="theme_default">#DDDDDD</color>
+    <color name="theme_red">#D8080B</color>
+    <color name="window_red">#D54348</color>
+    <color name="theme_yellow">#F5BE01</color>
+    <color name="window_yellow">#FFE84D</color>
+    <color name="theme_blue">#0599C6</color>
+    <color name="window_blue">#A5D0DE</color>
+    <color name="theme_green">#A1AB45</color>
+    <color name="window_green">#D7DE53</color>
+    <color name="theme_brown">#B05D17</color>
+    <color name="window_brown">#F1B95C</color>
+    
+    <color name="holo_red">#FF3B3B</color>
+    <color name="holo_yellow">#FAE453</color>
+    <color name="holo_blue">#84C9F7</color>
+    <color name="holo_green">#61D569</color>
+</resources>
