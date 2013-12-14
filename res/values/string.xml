@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">ShowTime</string>
-    <string name="version">ShowTime v4</string>
+    <string name="version">ShowTime v3.4</string>
     <string name="author">by CrossRT\nClick to open menu</string>
     <string name="no_class_found">No class found</string>
     <string name="no_class_filter">No class is matched\nPlease check your filter settings. </string>
